@@ -1,0 +1,458 @@
+/* MIXINS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* ESTILOS PARA EL HEADER Y FOOTER DE TODAS LAS PAGINAS */
+header {
+  background-color: #f1c40f;
+  width: 100%;
+}
+header .link-nav-hover:hover {
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.582);
+  border-radius: 5px;
+  transition: 0.4s ease-out;
+}
+
+.logo-hambrosio {
+  width: 70px;
+}
+
+.titulo-principal {
+  margin-top: 1em;
+  text-align: center;
+  font-size: 3em;
+  text-shadow: 2px 2px rgba(197, 197, 197, 0.849);
+}
+
+.footer {
+  background-color: #f1c40f;
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Roboto Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.collapse navbar-collapse ul li a:hover {
+  color: #ff0000;
+}
+
+/* ESTILOS PARA PAGINA DE INICIO */
+.comidas {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  width: 90%;
+  margin: 3em auto;
+}
+.comidas .tarjeta-comida img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tarjeta-comida {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 0.5s ease;
+}
+.tarjeta-comida:hover {
+  background-color: #f1c40f;
+  border-radius: 10px;
+}
+.tarjeta-comida img {
+  align-self: center;
+  border-radius: 5px;
+}
+.tarjeta-comida .descripcion-comida {
+  padding: 10px;
+}
+.tarjeta-comida .descripcion-comida p {
+  padding: 5px;
+  text-align: center;
+}
+.tarjeta-comida .descripcion-comida h3 {
+  padding: 5px;
+  text-align: center;
+}
+.tarjeta-comida .descripcion-comida h2 {
+  padding: 5px;
+  text-align: center;
+  color: #980f0f;
+}
+
+.inputs-formulario {
+  width: 60%;
+  margin: 1.6em auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.inputs-formulario textarea {
+  grid-column: span 3;
+}
+.inputs-formulario label {
+  grid-column: span 3;
+}
+
+.botones-formulario {
+  width: 60%;
+  margin: 1.6em auto;
+}
+.botones-formulario button {
+  padding: 10px;
+  background-color: #f1c40f;
+  font-family: "Roboto Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 20px;
+  cursor: pointer;
+  display: grid;
+  border-radius: 15px;
+}
+.botones-formulario .botones-amarillos {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.botones-formulario .botones-amarillos button {
+  margin: 20px;
+}
+.botones-formulario .botones-amarillos button:hover {
+  background-color: black;
+  color: white;
+  transition: 0.3s ease-out;
+}
+
+.botones {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  grid-column: 2;
+}
+
+.contacto {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px;
+  margin: 0 auto;
+  width: 70%;
+}
+.contacto h1 {
+  font-size: 45px;
+  align-self: center;
+  text-shadow: 2px 2px rgba(197, 197, 197, 0.849);
+}
+.contacto p {
+  font-size: 20px;
+}
+
+.main-contacto {
+  margin: 100px 0;
+}
+
+.maps {
+  display: flex;
+  justify-content: center;
+  margin: 1.5em auto;
+  border-radius: 20px;
+  width: 80%;
+}
+
+/* ESTILOS PARA PAGINA DE QUIENES SOMOS */
+.contenedor-quienes-somos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 6em auto;
+  width: 75%;
+  grid-gap: 40px;
+  justify-content: center;
+}
+.contenedor-quienes-somos .imagenes-quienes-somos img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.contenedor-quienes-somos .imagenes-quienes-somos img:hover {
+  box-shadow: 4px 4px 6px 4px rgba(0, 0, 0, 0.582);
+  border-radius: 5px;
+  transition: 0.3s ease-out;
+}
+.contenedor-quienes-somos .imagenes-quienes-somos:nth-child(1) {
+  grid-column: 1/3;
+}
+.contenedor-quienes-somos .texto-quienes-somos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.contenedor-quienes-somos .texto-quienes-somos h1 {
+  padding: 20px;
+}
+.contenedor-quienes-somos h1 {
+  text-shadow: 2px 2px rgba(197, 197, 197, 0.849);
+}
+
+.postres {
+  width: 65%;
+  margin: 4em auto;
+  justify-items: center;
+  gap: 25px;
+}
+.postres .titulo-texto {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.postres .titulo-texto p {
+  margin: 20px 0;
+}
+.postres h1 {
+  text-shadow: 2px 2px rgba(197, 197, 197, 0.849);
+  font-size: 60px;
+  text-align: start;
+}
+
+.tarjeta-postre {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.tarjeta-postre img {
+  width: 200px;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+.tarjeta-postre img:hover {
+  width: 300px;
+}
+.tarjeta-postre h2 {
+  color: #980f0f;
+  text-shadow: 2px 2px rgba(197, 197, 197, 0.849);
+  padding: 20px;
+  font-size: 30px;
+}
+.tarjeta-postre p {
+  padding: 20px;
+}
+
+/* ESTILOS PARA PAGINA DE RESERVAS */
+.contenedor-tarjetas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  margin: 3.5em auto;
+  width: 80%;
+}
+.contenedor-tarjetas img {
+  width: 100%;
+}
+.contenedor-tarjetas .tarjeta {
+  width: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f1c40f;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px -10px rgba(0, 0, 0, 0.45);
+  transition: all 0.2s ease-in-out;
+}
+.contenedor-tarjetas .tarjeta:hover {
+  transform: scale(1.2);
+}
+.contenedor-tarjetas .tarjeta .separador {
+  size: 2px;
+  color: blue;
+}
+
+.main-reservas {
+  margin: 150px 0;
+}
+
+.texto-reservas {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px;
+}
+.texto-reservas h1 {
+  font-size: 50px;
+  align-self: center;
+  text-shadow: 2px 2px rgba(197, 197, 197, 0.849);
+}
+.texto-reservas p {
+  font-size: 20px;
+}
+
+/* Efecto para boton de reserva - Pagina Reservas */
+.tarjeta h2 {
+  align-self: center;
+  margin: 20px 0px 0px 0px;
+}
+.tarjeta p {
+  align-self: center;
+  padding: 10px;
+}
+.tarjeta hr {
+  border-top: 2px solid black;
+}
+.tarjeta .boton-reservar {
+  padding: 20px;
+  background-color: #000;
+  color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.tarjeta .boton-reservar span {
+  font-family: "Roboto Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+  z-index: 2;
+}
+.tarjeta .boton-reservar::after {
+  background-color: #ff0000;
+  content: "";
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -70px;
+  left: 0px;
+  transition: 0.3s ease-in-out all;
+}
+.tarjeta .boton-reservar:hover::after {
+  top: 0;
+}
+
+/* Media queries para todas las paginas */
+@media screen and (max-width: 1320px) {
+  .comidas {
+    grid-gap: 50px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .inputs-formulario input {
+    grid-column: span 3;
+  }
+  .inputs-formulario #menu-desplegable {
+    grid-column: span 3;
+  }
+
+  .contenedor-quienes-somos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contenedor-quienes-somos .imagenes-quienes-somos:nth-child(1) {
+    grid-column: 1/-1;
+  }
+  .contenedor-quienes-somos .imagenes-quienes-somos:nth-child(3) {
+    grid-column: span 1;
+  }
+  .contenedor-quienes-somos .imagenes-quienes-somos:nth-child(4) {
+    grid-column: span 1;
+  }
+  .contenedor-quienes-somos .imagenes-quienes-somos:nth-child(5) {
+    grid-column: span 1;
+  }
+  .contenedor-quienes-somos .texto-quienes-somos {
+    grid-column: 1/-1;
+  }
+
+  .contenedor-tarjetas {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4em;
+  }
+
+  .inputs-formulario {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 960px) {
+  .comidas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contenedor-tarjetas {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 2.5em auto;
+    width: 80%;
+    grid-gap: 4em;
+  }
+
+  .postres {
+    width: 80%;
+  }
+  .postres h1 {
+    text-align: center;
+  }
+
+  .tarjeta-postre {
+    flex-direction: column;
+  }
+  .tarjeta-postre h2 {
+    text-align: center;
+    padding: 20px 20px 0px 20px;
+  }
+  .tarjeta-postre .imagen-postre {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 720px) {
+  .contenedor-quienes-somos .imagenes-quienes-somos:nth-child(1) {
+    grid-column: 1/-1;
+  }
+  .contenedor-quienes-somos .imagenes-quienes-somos:nth-child(3) {
+    grid-column: 1/-1;
+  }
+  .contenedor-quienes-somos .imagenes-quienes-somos:nth-child(4) {
+    grid-column: 1/-1;
+  }
+  .contenedor-quienes-somos .imagenes-quienes-somos:nth-child(5) {
+    grid-column: 1/-1;
+  }
+  .contenedor-quienes-somos .texto-quienes-somos {
+    grid-column: 1/-1;
+  }
+
+  .comidas {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 576px) {
+  #checkbox {
+    display: block;
+    margin: 0.3em auto;
+  }
+
+  .botones-formulario label {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contacto h1 {
+    font-size: 32px;
+  }
+
+  .comidas {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

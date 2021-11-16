@@ -1,0 +1,57 @@
+.inputs-formulario {
+	width: 60%;
+	margin: 1.6em auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+	textarea {
+		grid-column: span 3;
+	}
+	label {
+		grid-column: span 3;
+	}
+}
+.botones-formulario {
+	width: 60%;
+	margin: 1.6em auto;
+	button {
+		padding: 10px;
+		background-color: #f1c40f;
+		font-family: $fuentes;
+		font-size: 20px;
+		cursor: pointer;
+		display: grid;
+		border-radius: 15px;
+	}
+	.botones-amarillos {
+		@include flex(row,center);
+		button {
+			margin: 20px;
+			&:hover {
+				background-color: black;
+				color: white;
+        		transition: .3s ease-out;
+			}
+		}
+	}
+}
+.botones {
+	@include flex(row,space-between);
+	align-items: center;
+	grid-column: 2;
+}
+.contacto {
+	@include titulo-y-texto(45px,20px);
+	margin: 0 auto;
+	width: 70%;
+}
+.main-contacto{
+	margin: 100px 0;
+}
+.maps{
+	display: flex;
+	justify-content: center;
+	margin: 1.5em auto;
+	border-radius: 20px;
+	width: 80%;
+}

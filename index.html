@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/Logo/logo-hambrosio-blanco.png">
+
+    <link rel="stylesheet" href="">
+    <!-- SEO -->
+    <meta name="keywords" 
+    content="comidas, postres, reservas, restaurante, promociones"/>
+
+    <meta name="description"
+    content="Este es un sitio web de un restaurante en el que encontrarás imágenes y descripciones de comidas y postres argentinos">
+
+    <meta name="robots" content="index,follow">
+    <!-- FIN SEO -->
+    
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Fontawesome Icons -->
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- LINK CSS Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <title>Hambrosio | Inicio</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <!-- HEADER CON NAVBAR DE BOOTSTRAP -->
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <!-- LOGOTIPO -->
+              <img src="./img/Logo/logo-hambrosio-negro.png" alt="logo" class="logo-hambrosio" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active px-3 link-nav-hover"
+                    aria-current="page"
+                    href="index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active px-3 link-nav-hover" href="./pages/postres.html"
+                    >Postres</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active px-3 link-nav-hover" href="./pages/nosotros.html"
+                    >Quienes somos</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active px-3 link-nav-hover" href="./pages/reservas.html"
+                    >Reservas</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active px-3 link-nav-hover" href="./pages/contacto.html"
+                    >Contacto</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- MAIN: CAROUSEL BOOTSTRAP + TARJETAS DE COMIDAS -->
+      <main>
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./img/Inicio/0-principal(1).jpg"
+                class="d-block w-100"
+                alt="Imagen 1 con logo"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./img/Inicio/0-principal(2).jpg"
+                class="d-block w-100"
+                alt="Imagen 2 con logo"
+              />
+            </div>
+            <div class="carousel-item">
+              <img src="./img/Inicio/0-principal(3).jpg" class="d-block w-100" alt="Imagen 3 con logo" />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+
+          <h1 class="titulo-principal">PROMOCIONES</h1>
+        </div>
+
+        <div class="comidas">
+          <div class="tarjeta-comida">
+            <img src="./img/Inicio/1-empanadas.jpg" alt="Empanadas"/>
+            <div class="descripcion-comida">
+              <h2>Empanadas</h2>
+              <p>
+                Vienen horneadas o fritas, rellenas de vegetales o carne. Los
+                rellenos más comunes suelen incluír pollo, queso y jamón, maíz dulce,
+                caprese o queso azul.
+              </p>
+              <h3>$800,00</h3>
+            </div>
+          </div>
+
+          <div class="tarjeta-comida">
+            <img src="./img/Inicio/2-asado.jpg" alt="Asado"/>
+            <div class="descripcion-comida">
+              <h2>Asado</h2>
+              <p>
+                El asado es una celebración de varios pasos que puede durar
+                varias horas. Los platos principales incluyen morcilla, mollejas
+                de ternera, chinchulines y riñones.
+              </p>
+              <h3>$1.100,00</h3>
+            </div>
+          </div>
+
+          <div class="tarjeta-comida">
+            <img src="./img/Inicio/3-choripan.jpg" alt="Choripan"/>
+            <div class="descripcion-comida">
+              <h2>Choripán</h2>
+              <p>
+                Se sirve usualmente como entrada en un asado. Mientras que el
+                chorizo se hace generalmente de cerdo, el jabalí también se
+                puede encontrar en algunos restaurantes.
+              </p>
+              <h3>$1.000,00</h3>
+            </div>
+          </div>
+
+          <div class="tarjeta-comida">
+            <img src="./img/Inicio/4-humita.jpg" alt="Humita"/>
+            <div class="descripcion-comida">
+              <h2>Humita</h2>
+              <p>
+                Tentempié salado o plato principal, se hace con maíz y leche,
+                cebolla, especias y, a veces, queso de cabra. Envuelto en hojas
+                de maíz, se hace al vapor o se hierve.
+              </p>
+              <h3>$1.400,00</h3>
+            </div>
+          </div>
+          <div class="tarjeta-comida">
+            <img src="./img/Inicio/5-milanesa.jpg" alt="Milanesa"/>
+            <div class="descripcion-comida">
+              <h2>Milanesa</h2>
+              <p>
+                Generalmente se hace de carne de res o pechuga de pollo. Es un
+                corte delgado que se cubre de pan rallado y va frito o al
+                horno. Los aderezos incluyen un huevo frito, queso y salsa de
+                tomate.
+              </p>
+              <h3>$1.400,00</h3>
+            </div>
+          </div>
+
+          <div class="tarjeta-comida">
+            <img src="./img/Inicio/6-provoleta.jpg" alt="Provoleta"/>
+            <div class="descripcion-comida">
+              <h2>Provoleta</h2>
+              <p>
+                Cocinado en una sartén especial o en papel de aluminio simple,
+                la provoleta, hecha de leche de vaca, a menudo lleva orégano y
+                debe ser ligeramente crujiente por fuera y derretirse por
+                dentro.
+              </p>
+              <h3>$1.400,00</h3>
+            </div>
+          </div>
+
+          <div class="tarjeta-comida">
+            <img src="./img/Inicio/7-sorrentinos.jpg" alt="Sorrentinos"/>
+            <div class="descripcion-comida">
+              <h2>Sorrentinos</h2>
+              <p>
+                Los sorrentinos son un tipo de pasta rellena argentina y de
+                forma circular. La masa se elabora con harina y huevo, los rellenos que pueden combinar queso, jamón, vegetales o
+                frutos secos.
+              </p>
+              <h3>$1.400,00</h3>
+            </div>
+          </div>
+
+          <div class="tarjeta-comida">
+            <img src="./img/Inicio/8-locro.jpg" alt="Locro"/>
+            <div class="descripcion-comida">
+              <h2>Locro</h2>
+              <p>
+                Es un plato nacional tradicional del 25 de mayo para conmemorar
+                la Revolución de Mayo. El abundante estofado está hecho de maíz,
+                carne de res o cerdo, callos y chorizo rojo, así como otras
+                verduras.
+              </p>
+              <h3>$1.400,00 (12 u)</h3>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- FOOTER: PIE DE PAGINA -->
+    <footer class="footer py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-4 text-lg-start">
+            Hambrosio &copy; Todos los derechos reservados
+          </div>
+          <div class="col-lg-4 my-3 my-lg-0">
+            <a class="btn btn-outline-dark btn-social mx-2" href="#"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a class="btn btn-outline-dark btn-social mx-2" href="#"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a class="btn btn-outline-dark btn-social mx-2" href="#"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a class="link-dark text-decoration-none me-3" href="#"
+              >Diseñado por Alejandro Buergo</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- LINK JS BOOTSTRAP -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

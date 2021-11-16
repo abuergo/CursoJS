@@ -1,0 +1,45 @@
+/* ESTILOS PARA PAGINA DE INICIO */
+
+.comidas {
+	display: grid;
+	grid-gap: 50px;
+	grid-template-columns: repeat(4, 1fr);
+	justify-content: center;
+	width: 90%;
+	margin: 3em auto;
+	.tarjeta-comida {
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}
+.tarjeta-comida {
+	@include flex(column,center);
+	transition: all 0.5s ease;
+	&:hover {
+		background-color: $color_principal;
+		border-radius: 10px;
+	}
+	img {
+		align-self: center;
+		border-radius: 5px;
+	}
+	.descripcion-comida {
+		padding: 10px;
+		p {
+			padding: 5px;
+			text-align: center;
+		}
+		h3 {
+			padding: 5px;
+			text-align: center;
+		}
+		h2 {
+			padding: 5px;
+			text-align: center;
+			color: $color_secundario;
+		}
+	}
+}
