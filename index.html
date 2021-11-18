@@ -17,7 +17,7 @@
     <!-- FIN SEO -->
     
     <!-- LINK CSS -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./scss/style.css">
     <!-- Fontawesome Icons -->
     <script
       src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
@@ -57,15 +57,31 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
+                <li class="nav-item submenu">
                   <a
-                    class="nav-link active px-3"
+                    class="nav-link active px-3 link-nav-hover"
                     aria-current="page"
                     href="../index.html"
                     >
                     <i class="fas fa-shopping-cart"></i>
                     </a
                   >	
+                  <div id="carrito">
+                    <table id="lista-carrito" class="u-full-width">
+                        <thead>
+                            <tr>
+                                <th>IMAGEN</th>
+                                <th>NOMBRE</th>
+                                <th>PRECIO</th>
+                                <th>CANTIDAD</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+
+                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+            </div>
                 <li class="nav-item">
                   <a
                     class="nav-link active px-3 link-nav-hover"
@@ -160,7 +176,7 @@
               </p>
               <h3>$800,00</h3>
               <div class="col text-center">
-                <button class="btn btn-danger"> Agregar al carrito </button>
+                <button class="btn btn-danger" data-id="1"> Agregar al carrito </button>
              </div> 
 
             </div>
@@ -177,7 +193,7 @@
               </p>
               <h3>$1.100,00</h3>
               <div class="col text-center">
-                <button class="btn btn-danger"> Agregar al carrito </button>
+                <button class="btn btn-danger" data-id="2"> Agregar al carrito </button>
              </div> 
             </div>
           </div>
@@ -193,7 +209,7 @@
               </p>
               <h3>$1.000,00</h3>
               <div class="col text-center">
-                <button class="btn btn-danger"> Agregar al carrito </button>
+                <button class="btn btn-danger" data-id="3"> Agregar al carrito </button>
              </div> 
               <!-- <button type="button" class="btn btn-dark text-center">Agregar</button> -->
             </div>
@@ -210,7 +226,7 @@
               </p>
               <h3>$1.400,00</h3>
               <div class="col text-center">
-                <button class="btn btn-danger"> Agregar al carrito </button>
+                <button class="btn btn-danger" data-id="4"> Agregar al carrito </button>
              </div> 
             </div>
           </div>
@@ -226,7 +242,7 @@
               </p>
               <h3>$1.400,00</h3>
               <div class="col text-center">
-                <button class="btn btn-danger"> Agregar al carrito </button>
+                <button class="btn btn-danger" data-id="5"> Agregar al carrito </button>
              </div> 
             </div>
           </div>
@@ -243,7 +259,7 @@
               </p>
               <h3>$1.400,00</h3>
               <div class="col text-center">
-                <button class="btn btn-danger"> Agregar al carrito </button>
+                <button class="btn btn-danger" data-id="6"> Agregar al carrito </button>
              </div> 
             </div>
           </div>
@@ -259,7 +275,7 @@
               </p>
               <h3>$1.400,00</h3>
               <div class="col text-center">
-                <button class="btn btn-danger"> Agregar al carrito </button>
+                <button class="btn btn-danger" data-id="7"> Agregar al carrito </button>
              </div> 
             </div>
           </div>
@@ -276,12 +292,12 @@
               </p>
               <h3>$1.400,00 (12 u)</h3>
               <div class="col text-center">
-                <button class="btn btn-danger"> Agregar al carrito </button>
+                <button class="btn btn-danger" data-id="8"> Agregar al carrito </button>
              </div> 
             </div>
           </div>
         </div>
-      </main>
+      </main>      
     </div>
     <!-- FOOTER: PIE DE PAGINA -->
     <footer class="footer py-4">

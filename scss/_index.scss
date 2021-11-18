@@ -43,3 +43,99 @@
 		}
 	}
 }
+
+// CURSO JS - NUEVO
+.submenu {
+    position: relative;
+    transition: .3s ease-in;
+	
+
+}
+
+.submenu #carrito{
+    display: none;
+}
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right:0;
+
+    top:100%;
+    z-index: 1;
+    background-color: #EDD9A3;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+	font-family: $fuentes;
+	border: 3px solid black;
+
+	animation-name: rebotar;
+	animation-duration: 1s;
+}
+
+@keyframes rebotar {
+	0%, 20%, 50%, 80%, 
+	100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+}
+
+
+
+.u-full-width {
+	width: 100%;
+	box-sizing: border-box; }
+  .u-max-full-width {
+	max-width: 100%;
+	box-sizing: border-box; }
+  .u-pull-right {
+	float: right; }
+  .u-pull-left {
+	float: left; }
+
+	  .button{
+		margin-top: 20px;
+		display: inline-block;
+		height: 38px;
+		text-decoration: none;
+		padding: 0 30px;
+		color: #555;
+		text-align: center;
+		font-size: 11px;
+		font-weight: 600;
+		line-height: 38px;
+		letter-spacing: .1rem;
+	    border: 2px solid rgb(0, 0, 0);
+		text-transform: uppercase;
+		&:hover {
+			background-color: black;
+			color: white;
+		}
+	  }
+
+.borrar-comida {
+		background-color: red;
+		border-radius: 50%;
+		padding: 5px 10px;
+		text-decoration: none;
+		color: white;
+		font-weight: bold;
+	}
+
+/* Tables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+th,
+td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #E1E1E1; }
+th:first-child,
+td:first-child {
+  padding-left: 0; }
+th:last-child,
+td:last-child {
+  padding-right: 0; }
+
+tr{
+	text-align: center;
+}
