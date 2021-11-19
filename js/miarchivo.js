@@ -1,15 +1,4 @@
-/* Mi idea de proyecto final será la siguiente: 
-
-Como tengo una página web de un restaurante que realicé en el curso anterior de Desarrollo Web, pienso implementar un carrito de compra. Mi idea es hacerlo en la página de inicio (index.html), en la cual tengo tarjetas de distintas comidas y ya les agregué el boton de "Agregar al carrito" y un logo de un carrito en el navbar.
-En el carrito se van a aplicar operaciones de suma para calcular el costo total de productos seleccionados por el usuario.
-
-Posteriormente, voy a intentar implementar lo mismo con la página de postres (me faltaría agregar el boton de agregar al carrito en cada una de las tarjetas).
-
-Si se me ocurre algo mas que pueda hacer con JS lo voy a tratar de implementar :D. Saludos!
- */
-
-// Implemento carrito
-
+// Implemento funcionalidad de carrito
 const carrito = document.querySelector('#carrito');
 const contenedorComidas = document.querySelector('.comidas');
 const contenedorCarrito = document.querySelector('#lista-carrito tbody');
@@ -26,21 +15,14 @@ function cargarEventListeners(){
 
     // Eliminar todas las comidas (vaciar carrito)
     botonVaciarCarrito.addEventListener('click', eliminarTodasLasComidas);
-}
 
-function eliminarComidas(e){
-    if(e.target.classList.contains('borrar-comida')){
-        const comidaId = e.target.getAttribute('data-id'); 
-
-        carritoComidas = carritoComidas.filter((comida) => comida.id !== comidaId);
-
+    // Obtener los cursos del localStorage
+    document.addEventListener('DOMContentLoaded', () => {
+        // Obtener el string de comidas, castear a objetos y sumarlo al carrito
+        carritoComidas = JSON.parse(localStorage.getItem('carrito')) || [];
         cargarEnCarritoHTML();
-    }
-}
-
-function eliminarTodasLasComidas(){
-    carritoComidas = [];
-    cargarEnCarritoHTML();
+    })
+    
 }
 
 function agregarAlCarrito(e){
@@ -97,9 +79,29 @@ function cargarEnCarritoHTML(){
             <a href="#" class="borrar-comida" data-id="${id}">X</a>
         </td>
         `;
-
         contenedorCarrito.appendChild(fila);
     });
+
+    sincronizarConLocalStorage();
+}
+
+function eliminarComidas(e){
+    if(e.target.classList.contains('borrar-comida')){
+        const comidaId = e.target.getAttribute('data-id'); 
+
+        carritoComidas = carritoComidas.filter((comida) => comida.id !== comidaId);
+
+        cargarEnCarritoHTML();
+    }
+}
+
+function eliminarTodasLasComidas(){
+    carritoComidas = [];
+    cargarEnCarritoHTML();
+}
+
+function sincronizarConLocalStorage(){
+    localStorage.setItem('carrito', JSON.stringify(carritoComidas));
 }
 
 function limpiarContenedorCarrito(){
