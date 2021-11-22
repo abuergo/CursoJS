@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../img/Logo/logo-hambrosio-blanco.png">
+    <link rel="icon" href="../img/Logo/logo-hambrosio-blanco.png" />
 
     <!-- SEO -->
     <meta
@@ -45,7 +45,11 @@
         <div class="container-fluid">
           <a class="navbar-brand" href="../index.html">
             <!-- LOGOTIPO -->
-            <img src="../img/Logo/logo-hambrosio-negro.png" alt="logo" class="logo-hambrosio" />
+            <img
+              src="../img/Logo/logo-hambrosio-negro.png"
+              alt="logo"
+              class="logo-hambrosio"
+            />
           </a>
           <button
             class="navbar-toggler"
@@ -69,22 +73,30 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active px-3 link-nav-hover" href="./postres.html"
+                <a
+                  class="nav-link active px-3 link-nav-hover"
+                  href="./postres.html"
                   >Postres</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active px-3 link-nav-hover" href="./nosotros.html"
+                <a
+                  class="nav-link active px-3 link-nav-hover"
+                  href="./nosotros.html"
                   >Quienes somos</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active px-3 link-nav-hover" href="./reservas.html"
+                <a
+                  class="nav-link active px-3 link-nav-hover"
+                  href="./reservas.html"
                   >Reservas</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active px-3 link-nav-hover" href="./contacto.html"
+                <a
+                  class="nav-link active px-3 link-nav-hover"
+                  href="./contacto.html"
                   >Contacto</a
                 >
               </li>
@@ -127,11 +139,72 @@
           <input type="checkbox" checked="" name="" id="checkbox" />
           <label for="checkbox">Quiero recibir promociones de Hambrosio</label>
           <div class="botones-amarillos">
-            <button value="Limpiar formulario" id="boton-limpiar">Limpiar</button>
-            <button value="Enviar">Enviar</button>
+            <button value="Limpiar formulario" id="boton-limpiar">
+              Limpiar
+            </button>
+            <button value="Enviar" id="boton-enviar">Enviar</button>
           </div>
         </div>
       </form>
+
+      <!-- DESAFIO AJAX -->
+      <hr>
+      <div class="contenedor-consultas">
+        <div class="col text-center">
+          <h2>LLAMADA AJAX</h2>
+          <p>Presione los botones para extraer datos de la api y mostrarlos en una tabla</p>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <br />
+              <div class="col text-center">
+                <button class="btn btn-danger btn-consultar-usuarios">
+                  Consultar usuarios de JSONPlaceHolder
+                </button>
+                <br />
+                <br />
+              </div>
+
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Nombre completo</th>
+                    <th scope="col">Usuario</th>
+                    <th scope="col">Email</th>
+                  </tr>
+                </thead>
+                <tbody class="cuerpo-tabla1"></tbody>
+              </table>
+            </div>
+            <div class="col">
+              <br />
+              <div class="col text-center">
+                <button class="btn btn-info btn-consultar-personajes">
+                  Consultar personajes API HARRY POTTER
+                </button>
+                <br />
+                <br />
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Nombre completo</th>
+                    <th scope="col">Especie</th>
+                    <th scope="col">Casa</th>
+                  </tr>
+                </thead>
+                <tbody class="cuerpo-tabla2"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FIN DESAFIO AJAX -->
+      <br><br>
+      <hr>
+      <!-- Link de maps -->
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1642.1010758732855!2d-58.394092041755066!3d-34.5990493951152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccabfb88b7097%3A0xf73555ae9ee61d75!2sAv.%20Callao%20801-899%2C%20C1023AAB%20CABA!5e0!3m2!1ses!2sar!4v1636759897324!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="maps"></iframe>
     </main>
     <!-- FOOTER: PIE DE PAGINA -->
@@ -162,7 +235,11 @@
     </footer>
 
     <!-- ICONO WHATSAPP -->
-    <a href="https://api.whatsapp.com/send?phone=numero" class="btn-wsp" target="_blank">
+    <a
+      href="https://api.whatsapp.com/send?phone=numero"
+      class="btn-wsp"
+      target="_blank"
+    >
       <i class="fab fa-whatsapp"></i>
     </a>
 
@@ -175,12 +252,12 @@
 
     <!-- LINK JQUERY -->
     <script
-            src="https://code.jquery.com/jquery-3.6.0.min.js"
-            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-            crossorigin="anonymous"
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
     ></script>
 
     <!-- LINK JS -->
-    <script src="../js/miarchivo.js"></script>
+    <script src="../js/contactos.js"></script>
   </body>
 </html>

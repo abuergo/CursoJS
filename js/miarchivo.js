@@ -128,11 +128,6 @@ $(document).ready(function(){
         $('.submenu #carrito').addClass('desplegar-carrito');
         }
     });
-
-    // Para la seccion de contactos utilizo jquery para efectuar la limpieza de los inputs al clickear en el boton Limpiar
-    $("#boton-limpiar").click(function(event) {
-        $("#form-contacto")[0].reset();
-    });
 });
 
 
