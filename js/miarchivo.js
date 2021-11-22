@@ -109,3 +109,32 @@ function limpiarContenedorCarrito(){
         contenedorCarrito.removeChild(contenedorCarrito.firstChild);
     }
 }
+
+
+// Uso de JQuery
+
+// Mostrar mensaje de agregado al carrito
+$(document).ready(function(){
+    $('button').on('click', function(){
+        $('.mensaje-agregado-al-carrito').fadeIn(400).delay(1000).fadeOut(400); 
+    });
+
+    $('.carrito-comidas').on('click',function(){
+        if(  $('.submenu #carrito').hasClass('desplegar-carrito') ){
+        $('.submenu #carrito').hide();
+        $('.submenu #carrito').removeClass('desplegar-carrito');
+        } else {
+        $('.submenu #carrito').show();
+        $('.submenu #carrito').addClass('desplegar-carrito');
+        }
+    });
+
+    // Para la seccion de contactos utilizo jquery para efectuar la limpieza de los inputs al clickear en el boton Limpiar
+    $("#boton-limpiar").click(function(event) {
+        $("#form-contacto")[0].reset();
+    });
+});
+
+
+
+

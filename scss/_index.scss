@@ -48,15 +48,14 @@
 .submenu {
     position: relative;
     transition: .3s ease-in;
-	
-
 }
 
 .submenu #carrito{
     display: none;
 }
-.submenu:hover #carrito{
-    display: block;
+
+.desplegar-carrito{
+	display: block;
     position: absolute;
     right:0;
 
@@ -79,8 +78,6 @@
 	40% {transform: translateY(-30px);}
 	60% {transform: translateY(-15px);}
 }
-
-
 
 .u-full-width {
 	width: 100%;
@@ -138,4 +135,21 @@ td:last-child {
 
 tr{
 	text-align: center;
+}
+
+.mensaje-agregado-al-carrito{
+	position: fixed;
+	display: none;
+	line-height: 25px;
+	bottom: 30px;
+	right: 100px;
+	padding: 15px;
+	background-color: #EDD9A3;
+	// border-radius: 20px;
+	border: 2px solid black;
+	p{
+	text-align: center;
+	margin-bottom: 0px;
+	font-family: $fuentes;
+	}
 }
