@@ -121,11 +121,11 @@ $(document).ready(function(){
 
     $('.carrito-comidas').on('click',function(){
         if(  $('.submenu #carrito').hasClass('desplegar-carrito') ){
-        $('.submenu #carrito').hide();
-        $('.submenu #carrito').removeClass('desplegar-carrito');
+            $('.submenu #carrito').hide();
+            $('.submenu #carrito').removeClass('desplegar-carrito');
         } else {
-        $('.submenu #carrito').show();
-        $('.submenu #carrito').addClass('desplegar-carrito');
+            $('.submenu #carrito').show();
+            $('.submenu #carrito').addClass('desplegar-carrito');
         }
     });
 });
